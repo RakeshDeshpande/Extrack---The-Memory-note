@@ -1,16 +1,9 @@
-.cname{
-    
-        width:500px;
-        height: 30px;
-    }
+.cname {
+    width: 40%;
+    height: 20%;
+}
 
-    .btn{
-
-        position: relative;
-        left: 50%;
-    }
-
-    .div1{
-        position: absolute;
-        left:20%;
-    }
+.btn {
+    position: relative;
+    left: 50%;
+}
