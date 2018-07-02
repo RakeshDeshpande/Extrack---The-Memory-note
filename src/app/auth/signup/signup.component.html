@@ -1,0 +1,29 @@
+<app-homepage></app-homepage>
+    
+       <form  (ngSubmit)="OnSignup(f)" #f="ngForm" >
+          <div style="background-image:url(http://www.vinperfect.com/images/main_frame_background-crop-u904.png);" class="div1 form-group">
+        <h2 style="text-align: center">Register!</h2><br><br><br>
+        <div style="align-content: center;" >
+        <label for="Name" style="font-size: 20px; margin-left: 25px;"> Name: </label>
+        <input type="text" id="name" name="name" style="margin-left: 170px;" ngModel class="cname" required><br>
+    
+        <label for="Email" style="font-size: 20px; margin-left: 25px;">Email:</label>
+        <input type="email" id="email" name="email" style="margin-left: 170px;margin-top: 10px;" ngModel class="cname"  required><br>
+        
+        <label for="Re-Email" style="font-size: 20px; margin-left: 25px;"> Confirm E-mail: </label>
+        <input type="email" id="reemail" name="reemail" style="margin-left: 80px;margin-top: 10px;" ngModel class="cname" required> <br>
+        
+          <label for="password" style="font-size: 20px; margin-left: 25px;"> Password: </label>
+          <input type="password" id="password" name="password" style="margin-left: 130px;margin-top: 10px;" ngModel class="cname" required><br>
+  
+          <label for="re-password" style="font-size: 20px; margin-left: 25px;"> Confirm Password : </label>
+          <input type="password" id="repassword" name="repassword" style="margin-left: 43px;margin-top: 10px;" ngModel class="cname" required><br>
+      </div>
+        <button class="btn btn-default" (click)="OnSignup(f)" type="submit" style="margin-top: 30px;" [disabled]="!f.valid"> Register Me!</button>
+  
+      </div>
+        </form>
+  
+  
+ 
+  

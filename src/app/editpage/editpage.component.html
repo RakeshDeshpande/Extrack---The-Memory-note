@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-default" style="margin-top: 5px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand"  href=""> Extrack </a>
+          </div>
+
+          <div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><button class="btn btn-primary"  routerLink="/prevmemo"  style="margin-top: 7px;margin-right: 10px;"> Older-Memo </button> </li>
+                <li><button class="btn btn-primary"  routerLink="/upcoming"  style="margin-top: 7px;margin-right: 10px;">Upcoming</button></li>
+                  <li><button class="btn btn-primary" routerLink="/edit" style="margin-top: 7px;margin-right: 10px;"> Editor</button></li>
+                  <li> <a href=""routerLink="/logout" style="margin-left: 20px;"> Logout </a>  </li>
+                </ul>
+              </div>
+                </div>
+      </nav>
+          </div>
+
+
+          <div class="container-fluid">
+
+            <div class="row">
+
+              <div class="col-xs-6">
+              
+                <form  class="form-control"   (ngSubmit)="onSave(f)" #f="ngForm" >
+                  
+               <label for="account" style="font-size: 20px;" >   Occasion : </label>
+                  <input type="text" id="account" name="account" ngModel class="put" style="margin-left: 20px;">
+                
+                  <label for="account" style="font-size: 20px;" > Description : </label>
+                  <input type="text" id="description" name="description" ngModel class="putta" >
+                  
+                  <label for="image"  style="font-size: 20px;margin-top: 20px;"> Moment:</label>
+                  <input type="file" id="pic" name="pic" ngModel accept="image/*" style="margin-left: 180px;">
+                  
+                  <button class="btn btn-primary"  type="button" (click)="onSave(f)"  > Save it!</button>
+
+                  <button class="btn btn-default" type="button" (click)="onclear(f)" style="margin-left: 30px;"> Clear </button>
+                </form>
+              </div>
+              <div class="col-xs-6">
+               <div class="form-control">
+               <p style="font-size: 20px;font-family: serif;text-align: center;margin-top: 30px;"><u>How it works!</u></p>
+              <ul style="margin-top: 20px;font-family: serif;">You have to fill in the 3 sections i.e. Occasion and Description to save an <Strong><u>Extrack</u></Strong> note.
+              <li style="margin-top: 30px;font-family: serif;text-align: justify"><u>Occasion:</u> It's synonyms are a particular event, or the time at which it takes place, a special or noteworthy event, ceremony, or celebration</li>  
+              <li style="margin-top: 30px;font-family: serif;text-align: justify"><u>Description:</u>It's synonyms are a spoken or written account of a person, object, or event,a type or class of people or things.</li>
+              
+              <div class="form-control1">
+                e.g. : <em> I had been to various places with my besties such as most tourist placs of coorg, Wonderlaa-The Amusement park!, movie shows and so on. ! I can't describe the fun in writing. Here the glimpse of it :-)               </em>
+              </div>
+            </ul> 
+              <img  src="https://stylewhack.com/wp-content/uploads/2016/09/160120-news-friends.jpg" width="80%" height="44%">
+              </div>
+              </div>
+            </div>
+
+          </div>

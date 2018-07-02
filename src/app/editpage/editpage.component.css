@@ -1,0 +1,30 @@
+.put{
+    margin-top: 20px;
+    width: 500px;
+    height: 30px;
+
+}
+
+.putta{
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+}
+
+.form-control{
+
+    height: 550px;
+}
+
+img{
+
+    position: relative;
+    left: 10%;
+}
+
+.btn{
+
+    position: relative;
+    top: 15%;
+    left: 30%;
+}
